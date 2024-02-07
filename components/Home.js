@@ -46,7 +46,7 @@ function Home() {
 //useEffect
 
 useEffect(() => {
-  fetch('http://localhost:3000/movies')
+  fetch('https://mymoviz-backend-seven-eta.vercel.app/movies')
     .then(response => response.json())
     .then(data => {
       setApiMovies (data.movies);
